@@ -1,4 +1,4 @@
-package com.example.newjetpackapplication
+package com.example.newjetpackapplication.di.module
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

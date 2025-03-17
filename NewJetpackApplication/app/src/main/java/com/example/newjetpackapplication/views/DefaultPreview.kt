@@ -1,7 +1,9 @@
-package com.example.newjetpackapplication
+package com.example.newjetpackapplication.views
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.newjetpackapplication.models.City
+import com.example.newjetpackapplication.models.StateSection
 
 // DefaultPreview.kt
 @Preview(showBackground = true)

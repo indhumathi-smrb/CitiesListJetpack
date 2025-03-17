@@ -6,9 +6,10 @@ import androidx.activity.compose.setContent
 import androidx.activity.viewModels
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import com.example.newjetpackapplication.viewmodels.CityViewModel
+import com.example.newjetpackapplication.views.CityListScreen
 import com.example.newjetpackapplication.ui.theme.NewJetpackApplicationTheme
 import dagger.hilt.android.AndroidEntryPoint
-import javax.inject.Inject
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {

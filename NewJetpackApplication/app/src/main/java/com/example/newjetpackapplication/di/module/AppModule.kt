@@ -1,4 +1,4 @@
-package com.example.newjetpackapplication
+package com.example.newjetpackapplication.di.module
 
 import com.google.gson.Gson
 import dagger.Module

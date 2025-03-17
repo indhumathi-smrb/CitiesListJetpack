@@ -1,9 +1,12 @@
-package com.example.newjetpackapplication
+package com.example.newjetpackapplication.viewmodels
 
 import android.app.Application
 import android.util.Log
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.newjetpackapplication.models.City
+import com.example.newjetpackapplication.di.module.MyApplication
+import com.example.newjetpackapplication.models.StateSection
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -47,7 +50,7 @@ class CityViewModel @Inject constructor(
     }
 
     private fun groupCitiesByState(cities: List<City>): List<StateSection> {
-        return cities.groupBy { it.admin_name }
+        return cities.groupBy { it.adminName }
             .map { (state, citiesInState) ->
                 StateSection(state, citiesInState)
             }
